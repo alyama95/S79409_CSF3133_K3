@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,
+	initial-scale=1.0">
+    <title>Hackathon</title>
+</head>
+
+<body>
+	<!-- Header section with event name and a short tagline -->
+	<header>
+		<h1>Web Development Hackathon 2026</h1>
+		<p>Empowering future developers through hands on coding, teamwork, and innovation</p>
+	</header>
+	
+	<!-- Navigation with internal link that jump to each page section -->
+	<nav>
+		<a href="#about">About the Event</a> |
+		<a href="#schedule">Event Schedule</a> |
+		<a href="#register">Registration</a> 
+	</nav>
+	
+	<!-- Section 1: About the Event -->
+	<section id="about">
+		<h2>About the Event</h2>
+		
+		<!-- Article 1: Keynote Speaker -->
+		<article>
+			<h3>Keynote Speaker: Dr. Wan Nurul Ezzah</h3>
+			<p>
+				<em>A veteran cloud architect who will deliver the opening keynote discussing<br>
+				the latest trend in scalable web architecture and AI-driven applications.</em>
+			</p>
+		</article>
+		
+		<!-- Article 2: Hands-on Workshop Activity -->
+		<article>
+			<h3>Highlight Activity: 5-Hour Sprint Challenge</h3>
+			<p>
+				<em>Each team will collaborate under timed conditions to solve real-world problems<br>
+				by building functional web prototypes evaluated by industry judges.</em>
+			</p>
+		</article>
+	</section>
+	
+	<hr>
+	
+	<!-- Section 2: Event Schedule (Table) -->
+	<section id="schedule">
+		<h2>Event Schedule</h2>
+		
+		<table>
+			<tr>
+				<th scope="col">Time</th>
+				<th scope="col">Activity</th>
+				<th scope="col">Venue</th>
+				<th scope="col">Person in Charge</th>
+			</tr>
+			
+			<!-- Row 1 -->
+			<tr>
+				<td>8.00 AM - 8.30 AM</td>
+				<td>Participant Registration &amp; Breakfast</td>
+				<td>Auditorium C Lobby</td>
+				<td>Ms. Huda</td>
+			</tr>
+			
+			<!-- Row 2 -->
+			<tr>
+				<td>8.30 AM - 10.00 AM</td>
+				<td>Opening Ceremony &amp; Keynote Address</td>
+				<td>Auditorium C</td>
+				<td>Dr. Wan Nurul Ezzah</td>
+			</tr>
+			
+			<!-- Row 3 -->
+			<tr>
+				<td>10.00 AM - 12.00 AM</td>
+				<td>Hackathon Sprint</td>
+				<td rowspan="2">Programming Lab 1</td>
+				<td>Dr. Wafa Hanani</td>
+			</tr>
+			
+			<!-- Row 4 -->
+			<tr>
+				<td>12.00 PM - 1.00 PM</td>
+				<td>Mentorship &amp; Code Review Session</td>
+				<td>Ms. Nur Auni</td>
+			</tr>
+			
+			<!-- Row 5 -->
+			<tr>
+				<td>1.00 PM - 2.00 PM</td>
+				<td colspan="3">Prayer &amp; Lunch Break</td>
+			</tr>
+			
+			<!-- Row 6 -->
+			<tr>
+				<td>2.00 PM - 5.00 PM</td>
+				<td>Final Sprint &amp; Project Pitching</td>
+				<td>Programming Lab 1</td>
+				<td>Panel Judges</td>
+			</tr>
+			
+			<!-- Row 7 -->
+			<tr>
+				<td>5.00 PM - 6.00 PM</td>
+				<td>Closing Ceremony &amp; Prize Presentation</td>
+				<td>Auditorium A</td>
+				<td>FSKM Faculty Dean</td>
+			</tr>
+		</table>
+	</section>
+	
+	<hr>
+	
+	<!-- Section 3: Registration Form -->
+	<section id="register">
+		<h2>Registration Form</h2>
+		
+		<form action="register.html" method="post">
+			
+			<!-- Personal Information Input (Name, Matric No, E-mail -->
+			<label for="fullname">Full Name:</label><br>
+			<input type="text" id="fullname" name="fullname" required><br><br>
+			
+			<label for="matricno">Matric Number:</label><br>
+			<input type="text" id="matricno" name="matricno" required><br><br>
+			
+			<label for="email">E-mail Address:</label><br>
+			<input type="email" id="email" name="email" required><br><br>
+			
+			<!-- Radio buttons for Year of Study -->
+			<label>Year of Study:</label><br>
+			
+			<input type="radio" id="year1" name="year_of_study" value="1" required>
+			<label for="year1">Year 1</label><br>
+			
+			<input type="radio" id="year2" name="year_of_study" value="2" required>
+			<label for="year2">Year 2</label><br>
+			
+			<input type="radio" id="year3" name="year_of_study" value="3" required>
+			<label for="year3">Year 3</label><br>
+			
+			<input type="radio" id="year4" name="year_of_study" value="4" required>
+			<label for="year4">Year 4</label><br>
+			
+			<!-- Session Selection Checkboxes -->
+			<label>Select sessions you wish to participate in:</label><br>
+			
+			<input type="checkbox" id="keynote" name="sessions" value="keynote">
+			<label for="keynote">Opening Keynote Address</label><br>
+			
+			<input type="checkbox" id="sprint" name="sessions" value="sprint">
+			<label for="sprint">5-Hour Sprint Challenge</label><br>
+			
+			<input type="checkbox" id="mentorship" name="sessions" value="mentorship">
+			<label for="mentorship">Mentorship &amp; Code Review Session</label><br>
+			
+			<input type="checkbox" id="closing" name="sessions" value="closing">
+			<label for="closing">Pitching &amp; Award Presentation</label><br>
+			
+			<!-- Programme Selection -->
+			<label for="programme">Program:</label><br>
+			<select id="programme" name="programme" required>
+				<option value="">-- Please choose an option --</option>
+				<option value="software_engineering">Bachelor of Software Engineering</option>
+				<option value="mobile_computing">Bachelor of Mobile Computing</option>
+				<option value="maritime_informatics">Bachelor of Maritime Informatics</option>
+				<option value="cloud_computing">Bachelor of Cloud Computing Security</option>
+			</select>
+			
+			<!-- Submit button -->
+			<input type="submit" value="Submit">
+		</form>
+	</section>
+	
+	<hr>
+	
+	<!-- Footer -->
+	<footer>
+		<p>&copy; 2026 Hackathon Community. All rights reserved.</p>
+	</footer>
+</body>
+</html>
