@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,
+	initial-scale=1.0">
+    <title>Lab Exercise 3</title>
+</head>
+
+<body>
+	<!-- Header Section -->
+	<div>
+		<header>
+			<h1>Website Title</h1>
+			<span style="color: blue; font style: italic;">This is slogan or subtitle</span>
+		</header>
+	</div>
+	
+	<!-- Content Section -->
+	<div>
+		<h2>Contact Form</h2>
+		<form>
+			Email: <input type="email" name="useremail">
+			<br>
+			Date: <input type="date" name="date">
+			<br>	
+			<label for="satisfaction">Satisfaction Level:</label><br>
+			<br>
+			<input type="range" id="satisfaction" name="satisfaction" min="1" max="10"><br><br>
+			<br>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+	
+	<!-- Inline Calculator Section -->
+	<div>
+		<h2>Inline Calculator</h2>
+		<form oninput="result.value = parseInt(num1.value || 0) + parseInt(num2.value || 0);">
+			<input type="number" id="num1" value="0"> +
+			<input type="number" id="num2" value="0"> =
+			<output name="result" for="num1 num2">0</output>
+		</form>
+	</div>
+	
+	<!-- Footer Section -->
+	<div>
+		<footer>
+			<p>Contact us at support@@example.com | Phone: 013-456 7890</p>
+			<p>&copy; 2026 Website Name. All rights reserved.</p>
+		</footer>
+	</div>
+</body>
+</html>
