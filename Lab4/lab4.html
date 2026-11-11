@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab Exercise 4</title>
+  
+  <!-- External CSS Link -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Internal CSS -->
+  <style>
+    /* Specific internal styling for hero accents and decorative headings */
+    .hero-subtitle {
+      text-decoration: overline underline;
+      text-decoration-color: #2563eb;
+      text-decoration-thickness: 2px;
+      font-style: italic;
+    }
+
+    .special-offer {
+      text-decoration: line-through;
+      color: #94a3b8;
+      margin-right: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Semantic Header & Navigation -->
+  <header>
+    <div class="header-container">
+      <h1 class="site-title">TechSphere Hub</h1>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#articles">Articles</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Layout -->
+  <main class="main-container">
+
+    <!-- About Section -->
+    <section id="about" class="content-section">
+      <h2 class="section-title">About Our Lab</h2>
+      <p class="hero-subtitle">Exploring Modern Web Development & Design</p>
+      <p>
+        Welcome to TechSphere Hub. This platform demonstrates structured semantic HTML5 
+        development integrated with modern, responsive CSS styling and interactive form elements.
+      </p>
+    </section>
+
+    <!-- Embedded Media Section -->
+    <section id="media" class="content-section">
+      <h2 class="section-title">Featured Video</h2>
+      <figure class="video-wrapper">
+        <video controls poster="https://via.placeholder.com/800x450/1e293b/ffffff?text=Video+Preview">
+          <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+          <!-- WebVTT caption track -->
+          <track kind="captions" src="captions.vtt" srclang="en" label="English" default>
+            Your browser does not support the video tag.
+        </video>
+        <figcaption>Demonstration: Modern responsive video container and media streaming concepts.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Semantic Article Section -->
+    <section id="articles" class="content-section">
+      <h2 class="section-title">Latest Articles</h2>
+      <div class="article-grid">
+        <article class="card">
+          <h3 class="article-heading">The Semantic Web</h3>
+          <p>Semantic tags like <code>&lt;header&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;nav&gt;</code> improve both accessibility and search engine readability.</p>
+          <p><span class="special-offer">Regular Access: $29</span> <strong>Free for Students</strong></p>
+          <a href="#contact" class="card-link">Learn More &rarr;</a>
+        </article>
+
+        <article class="card">
+          <h3 class="article-heading">Responsive Layouts</h3>
+          <p>By pairing flexible CSS Grid and Flexbox with media queries, pages adapt effortlessly across mobile, tablet, and desktop viewports.</p>
+          <a href="#contact" class="card-link">Explore Guides &rarr;</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Interactive Form Section -->
+    <section id="contact" class="content-section">
+      <h2 class="section-title">Community Registration</h2>
+      <form class="interactive-form" action="#" method="POST">
+        
+        <!-- Text Inputs -->
+        <div class="form-group">
+          <label for="full-name">Full Name:</label>
+          <input type="text" id="full-name" name="fullName" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email-address">Email Address:</label>
+          <input type="email" id="email-address" name="emailAddress" placeholder="example@gmail.com" required>
+        </div>
+
+        <!-- Radio Buttons -->
+        <fieldset class="form-group">
+          <legend>Gender</legend>
+          <div class="options-group">
+            <label class="choice-label">
+              <input type="radio" name="gender" value="male" required> Male
+            </label>
+            <label class="choice-label">
+              <input type="radio" name="gender" value="female"> Female
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- Checkboxes -->
+        <fieldset class="form-group">
+          <legend>Favorite Hobbies</legend>
+          <div class="options-group checkbox-grid">
+            <label class="choice-label">
+              <input type="checkbox" name="hobbies" value="coding"> Coding
+            </label>
+            <label class="choice-label">
+              <input type="checkbox" name="hobbies" value="gaming"> Gaming
+            </label>
+            <label class="choice-label">
+              <input type="checkbox" name="hobbies" value="reading"> Reading
+            </label>
+            <label class="choice-label">
+              <input type="checkbox" name="hobbies" value="photography"> Photography
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- Submit Button -->
+        <div class="form-actions">
+          <button type="submit" class="submit-btn">Submit Registration</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Semantic Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2026 TechSphere Hub. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#about">Privacy Policy</a></li>
+        <li><a href="#contact">Contact Support</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* --- Global Reset & Responsiveness --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    background-color: #f9f9f9;
+}
+
+/* Responsive video rule */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- Header & Navigation Bar --- */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+}
+
+header h1 {
+    text-decoration: overline;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #003d82;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 12px 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* --- Interactive Link States (Correct Order: link -> visited -> hover -> active) --- */
+nav a:link {
+    color: #ffffff;
+}
+
+nav a:visited {
+    color: #e0e0e0;
+}
+
+nav a:hover {
+    background-color: #002244;
+    color: #ffcc00;
+}
+
+nav a:active {
+    color: #ff3333;
+}
+
+/* --- Sections and ID Selectors --- */
+section {
+    padding: 20px;
+    margin: 10px auto;
+    width: 90%;
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+#destinations h2 {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* --- Class Selectors (.card, .price, .old-price, .trip-form) --- */
+.card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.price {
+    font-size: 1.1rem;
+    color: #27ae60;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999999;
+    margin-right: 10px;
+}
+
+.trip-form {
+    background-color: #f1f8e9;
+    padding: 20px;
+    border: 1px solid #c8e6c9;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.trip-form div {
+    margin-bottom: 15px;
+}
+
+.trip-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* --- Footer Styling --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222222;
+    color: white;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #4fc3f7;
+    text-decoration: none;
+}

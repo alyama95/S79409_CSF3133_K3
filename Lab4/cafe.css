@@ -1,0 +1,77 @@
+/* --- Navigation Bar Styles (External CSS) --- */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* --- Interactive Link States in Correct Order (link -> visited -> hover -> active) --- */
+nav a:link {
+    color: #1A5276;
+}
+
+nav a:visited {
+    color: #7D3C98;
+}
+
+nav a:hover {
+    color: #E67E22;
+    background-color: #dddddd;
+}
+
+nav a:active {
+    color: #C0392B;
+}
+
+/* --- Video Responsiveness --- */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- Menu & Price Enhancements --- */
+.old-price {
+    text-decoration: line-through;
+    color: #888888;
+    margin-right: 8px;
+}
+
+.item {
+    border-bottom: 1px solid #eeeeee;
+    padding: 10px 0;
+}
+
+/* --- Feedback Form Styling --- */
+.feedback-form {
+    background-color: #fdf2e9;
+    padding: 20px;
+    border: 1px solid #f5cba7;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+}
+
+.feedback-form div {
+    margin-bottom: 12px;
+}
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+}

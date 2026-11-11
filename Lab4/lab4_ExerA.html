@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visit Terengganu - Tourism Problem Page</title>
+  
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Internal CSS -->
+  <style>
+		.highlight-banner {
+			background-color: #E3F2FD;
+			padding: 15px;
+			text-align: center;
+		}
+		.intro-text {
+			font-size: 1.1rem;
+			color: #333333;
+		}
+		.old-price {
+			text-decoration: line-through;
+			color: #888888; 
+		}
+	</style>
+</head>
+<body>
+	<!-- Header and navigation -->
+	<header>
+		<h1>Visit Terenggganu</h1>
+		<nav>
+			<ul>
+				<li><a href="#destinations">Destinations</a></li>
+				<li><a href="#video">Video</a></li>
+				<li><a href="#trip">Trip</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<!-- Highlight banner using internal CSS -->
+		
+		<div class="highlight-banner">
+			<p class="intro-text">Discover the culture and rich heritage of Terengganu!</p>
+		</div>]
+		
+		<!-- Destinations section -->
+		<section id="destinations">
+			<h2>Featured Destinations</h2>
+			
+			<article class="card">
+				<h3>Redang Island</h3>
+				<p>Crystal clear water and world class coral reefs, ideal for snorkeling and diving.</p>
+				<p class="price">
+					<span class="old-price">RM 299</span> <strong>RM 199</strong>
+				</p>
+			</article>
+			
+			<article class="card">
+				<h3>Kenyir Lake</h3>
+				<p>The largets man-made lake in Southeast Asia, surrounded by ancient rainforests and waterfalls.</p>
+				<p class="price">
+					<span class="old-price">RM 250</span> <strong>RM 150</strong>
+				</p>
+			</article>
+			
+			<article class="card">
+				<h3>Pasar Payang</h3>
+				<p>Local cultural marketplacefor traditional batik and local delicacies.</p>
+				<p class="price">
+					<span class="old-price">RM 60</span> <strong>RM 40</strong>
+				</p>
+			</article>
+			
+			<!-- Meter element (filled trip seats) -->
+			<div class="seat-status">
+				<p>Trip Seats Booked: <meter min="0" max="40" value="28">28/40</meter>(28 of 40 seats filled)</p>
+			</div>
+		</section>
+	
+		<!-- Video section -->
+		<section id="video">
+			<h2>Watch Our Promotional Video</h2>
+			<figure>
+				<video width="600" height="340" controls>
+					<source src="visiterengganu.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+				<figcaption>Scenic views and cultural highlights of Terengganu.</figcaption>
+			</figure>
+		</section>
+		
+		<!-- Form section -->
+		<section id="trip">
+			<h2>Trip Interest Form</h2>
+			<form class="trip-form" action="#" method="POST">
+			
+				<div>  
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="fullName" placeholder="Enter your full name" required>
+				</div>
+				<br>
+				<div>  
+					<label for="email">E-mail:</label>
+					<input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+				</div>
+				<br>
+				<div>  
+					<label>Traveller Type:</label>
+					<label><input type="radio" name="traveller_type" value="Student">Student</label>
+					<label><input type="radio" name="traveller_type" value="Staff">Staff</label>
+					<label><input type="radio" name="traveller_type" value="Public">Public</label>
+				</div>
+				<br>
+				<div>  
+					<label>Interests:</label>
+					<label><input type="checkbox" name="interests" value="Islands">Islands</label>
+					<label><input type="checkbox" name="interests" value="Food">Food</label>
+					<label><input type="checkbox" name="interests" value="Culture">Culture</label>
+					<label><input type="checkbox" name="interests" value="Nature">Nature</label>
+				</div>
+				<br>
+				<div>
+					<button type="submit">Submit</button>
+				</div>
+			</form>
+		</section>
+	</main>
+	
+	<!-- Footer -->
+	<footer>
+		<p>&copy; 2026 Visit Terengganu Tourism Office</p>
+		<address>
+			Contact us at: <a href="mailto:tourism@terengganu.gov.my">tourism@terengganu.gov.my</a>
+		</address>
+	</footer>
+</body>
+</html>
