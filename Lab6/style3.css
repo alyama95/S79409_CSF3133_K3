@@ -1,0 +1,83 @@
+/* Page and typography styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  padding: 24px;
+}
+
+h2 {
+  color: #154c79;
+  margin-bottom: 14px;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  max-width: 420px;
+  margin-bottom: 16px;
+}
+
+label {
+  display: inline-block;
+  width: 110px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  padding: 6px 8px;
+  border: 1px solid #94a3b8;
+  border-radius: 4px;
+}
+
+/* Button styling and hover effect */
+button {
+  padding: 8px 14px;
+  background-color: #2575b8;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-top: 6px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #154c79;
+}
+
+#result {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#checkedTime {
+  font-size: 0.9rem;
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+
+/* Grade table styling */
+table {
+  border-collapse: collapse;
+  margin-top: 12px;
+  min-width: 240px;
+  background-color: #ffffff;
+}
+
+th,
+td {
+  border: 1px solid #cbd5e1;
+  padding: 8px 14px;
+  text-align: center;
+}
+
+th {
+  background-color: #154c79;
+  color: #ffffff;
+}

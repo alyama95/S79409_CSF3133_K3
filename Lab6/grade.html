@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Student Grade Calculator</title>
+	<link rel="stylesheet" href="style3.css" />
+</head>
+<body>
+	<h2>Student Grade Calculator</h2>
+
+	<!-- Form returns false via checkMark() to prevent page reload -->
+	<form name="gradeForm" onsubmit="return checkMark()">
+		<label for="name">
+			Name:
+		</label>
+		<input type="text" id="name" name="name" /><br />
+
+		<label for="mark">
+			Mark (0-100): 
+		</label>
+		<input type="text" id="mark" name="mark" /><br />
+
+		<button type="submit">
+			Check Grade
+		</button>
+		
+		<!-- Extension: Random Mark button -->
+		<button type="button" onclick="setRandomMark()">
+			Random Mark
+		</button>
+	</form>
+
+	<p id="result"></p>
+	
+	<!-- Extension: Timestamp element below result -->
+	<p id="checkedTime"></p>
+
+	<button type="button" onclick="showTable()">
+		Show Grade Table
+	</button>
+	<div id="tableContainer"></div>
+
+	<!-- Linked to corrected grade.js -->
+	<script src="grade.js"></script>
+</body>
+</html>
